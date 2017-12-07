@@ -1,0 +1,37 @@
+#accordion {
+  width: 500px;
+  margin: 0 auto;
+  border: 1px solid black;
+  font-family: Arial;
+}
+
+.accordion-title {
+  background-color: #333;
+  color: #ccc;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.accordion-title.active {
+  background: #111;
+  color: #fff;
+}
+
+.accordion-title.active + .accordion-cont {
+  max-height: 300px;
+
+
+  transition: max-height .3s ease-in;
+}
+.accordion-cont {
+  margin-left: 15px;
+  max-height: 0;
+  overflow: hidden;
+
+  transition: max-height .3s ease-out;
+}﻿
+
+p {
+  margin-left: 15px;
+}

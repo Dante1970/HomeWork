@@ -1,0 +1,126 @@
+.button {
+  display: block;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  bottom: 50px;
+  border: 1px solid black;
+
+  transition: background 1s;
+}
+
+.block {
+  display: block;
+  position: fixed;
+  height: 100px;
+  width: 100px;
+  top: 50px;
+  border: 1px solid #aaa;
+  color: #aaa;
+}
+
+.button.one {
+  margin: 0 30%;
+}
+
+.button.two {
+  margin: 0 50%;
+}
+
+.button.three {
+  margin: 0 70%;
+}
+
+.block.one {
+  margin: 0 30%;
+    transform: translateY(0px);
+    border: 1px solid #aaa;
+    color: #aaa;
+    transition: transform 2s;
+}
+
+.block.two {
+  margin-left: 50%;
+    transform: translateY(0px);
+    border: 1px solid #aaa;
+    color: #aaa;
+    transition: transform 2s;
+}
+
+.block.three {
+  margin-left: 70%;
+    transform: translateX(0px);
+    transition: transform 2s;
+}
+
+span {
+  position: absolute;
+  top: 40%;
+  left: 23%;
+}
+
+input {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100px;
+  width: 100px;
+}
+
+.spanBlock {
+  position: absolute;
+  top: 40%;
+  left: 46%;
+}
+
+
+/* Connecting animation*/
+
+.button.one:hover+.block.one {
+/*  animation: one 2s forwards;*/
+    transform: translateY(150px) rotate(45deg);
+    border: 1px solid black;
+    color: black;
+}
+
+input:checked+div+.block.two {
+/*  animation: two 2s forwards;*/
+    transform: translateY(200px);
+    border: 1px solid black;
+    color: black;
+}
+
+.button.three:active+.block.three {
+/*  animation: three 2s forwards;*/
+    transform: translateX(400px);
+    border: 1px solid black;
+    color: black;
+}
+
+
+/* End сonnecting animation*/
+
+
+/* Animation button*/
+
+.button.one:hover {
+  background: #bbb;
+  transition: 1s;
+}
+
+input:checked+div {
+  background: #bbb;
+  transition: 1s;
+}
+
+.button.three:active {
+  background: #bbb;
+  transition: 1s;
+}
+
+
+/* End animation button*/

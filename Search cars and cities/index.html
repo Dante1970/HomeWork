@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Красапета мой</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <ul class="carList">
+    <li class="car" data-cities="new york, chicago, green bay">Mazda</li>
+    <li class="car" data-cities="new york, minneapolis">Toyota</li>
+    <li class="car" data-cities="dallas, los angeles">Renault</li>
+    <li class="car" data-cities="washington, chicago, boston">Honda</li>
+    <li class="car" data-cities="houston, san diego, new york">Subaru</li>
+    <li class="car" data-cities="amsterdam, baku, washington">Hyundai</li>
+    <li class="car" data-cities="jerusalem, lisbon, london">BMW</li>
+    <li class="car" data-cities="lisbon, chicago, boston">Mercedes</li>
+    <li class="car" data-cities="san Diego, dallas, minneapolis">Porsche</li>
+    <li class="car" data-cities="jerusalem, baku, green ba">Mustang</li>
+  </ul>
+  <div class="citiesSearch">
+    <input type="text" id="car" placeholder="Введите автомобиль">
+    <ul class="citiesResult"></ul>
+  </div>
+
+  <ul class="citiesList">
+    <li class="cities" data-car="mazda, toyota, subaru">New York</li>
+    <li class="cities" data-car="mazda, honda, mercedes">Chicago</li>
+    <li class="cities" data-car="mazda, mustang">Green Bay</li>
+    <li class="cities" data-car="toyota, porsche">Minneapolis</li>
+    <li class="cities" data-car="renault, porsche">Dallas</li>
+    <li class="cities" data-car="renault">Los Angeles</li>
+    <li class="cities" data-car="honda, hyundai">Washington</li>
+    <li class="cities" data-car="honda, mercedes">Boston</li>
+    <li class="cities" data-car="subaru">Houston</li>
+    <li class="cities" data-car="subaru, porsche">San Diego</li>
+    <li class="cities" data-car="hyundai">Amsterdam</li>
+    <li class="cities" data-car="hyundai, mustang">Baku</li>
+    <li class="cities" data-car="bmw, mustang">Jerusalem</li>
+    <li class="cities" data-car="bmw, mercedes">Lisbon</li>
+  </ul>
+  <div class="carSearch">
+    <input type="text" id="cities" placeholder="Введите город">
+    <ul class="carResult"></ul>
+  </div>
+
+  <!-- script -->
+  <script src="jquery-3.2.1.min.js"></script>
+  <script src="bootstrap.js"></script>
+  <script src="1.js"></script>
+</body>
+</html>

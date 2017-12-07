@@ -1,0 +1,30 @@
+#accordion {
+  border: 1px solid black;
+  font-family: Arial;
+  margin: 200px auto;
+  width: 500px;
+  box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.75);
+}
+
+.accordion-title {
+  background-color: #333;
+  color: #ccc;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.accordion-title:active {
+  background: #111;
+  color: #fff;
+}
+
+.accordion-cont {
+  display: none;
+  margin-left: 15px;
+}﻿
+
+p {
+  margin-left: 15px;
+}

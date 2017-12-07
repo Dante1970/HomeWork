@@ -1,0 +1,206 @@
+
+/*****Базовые элементы*****/
+* {
+  font-family: Interstate, "Lucida Grande",
+  "Lucida Sans Unicode", "Lucida Sans", Garuda, Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, .8);
+  border: 1px solid black;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  left: 15px;
+  padding: 0 3px;
+  position: absolute;
+  top: 15px;
+}
+
+header {
+  background: url(img/top.jpg);
+  border-radius: 4px;
+  box-shadow: inset 0px -3px 0px rgb(149, 0, 0);
+  height: 150px;
+  width: 100%;
+}
+
+nav {
+  float: left;
+  height: auto;
+  margin-top: 10px;
+  width: 25%;
+}
+
+content {
+  position: relative;
+  float: right;
+  height: 500px;
+  width: 75%;
+
+}
+
+ section {
+ background: #f1c40f;
+ box-shadow: inset 0px -3px 0px #f39c12;
+ color: black;
+ display: block;
+ height: 170px;
+ margin: 10px 0 10px 10px;
+ padding: 10px;
+ width: 720px;
+ }
+
+ ul {
+   height: auto;
+   list-style-type: none;
+   position: relative;
+   width: 250px;
+ }
+
+ li {
+   background: #2ecc71;
+   box-shadow: inset 0px -3px 0px #27ae60;
+   color: #2c3e50;
+   cursor: pointer;
+   font-weight: 900;
+   height: 50px;
+   line-height: 50px;
+   padding-left: 20px;
+
+   transition: 0.3s;
+ }
+
+/*****Базовые элементы:hover*****/
+ li:hover {
+   transform: translateX(3px);
+ }
+
+ /*****Айдишники*****/
+#hello {
+  animation: anim 0.5s;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 10px;
+  color: #fff;
+  cursor: default;
+  font-weight: bold;
+  margin: 50px;
+  padding: 3px 10px;
+  position: fixed;
+
+  z-index: 1;
+}
+
+#container {
+  background: #ccc;
+  height: auto;
+  margin-top: 10px;
+  margin: 0 auto;
+  position: relative;
+  width: 1000px;
+}
+
+#ControlPanel {
+  position: fixed;
+  left: 50px;
+  bottom: 25px;
+}
+
+ /*****Классы*****/
+.add {
+   background: red;
+   border-radius: 6px;
+   box-shadow: inset 0px -3px 0px rgb(149, 0, 0);
+   color: white;
+   cursor: pointer;
+   height: 20px;
+   left: -24px;
+   line-height: 20px;
+   position: absolute;
+   text-align: center;
+   top: -9px;
+   transition: 0.3s;
+   width: 20px;
+}
+
+.active {
+  background: #3498db;
+  animation: new 0.5s;
+}
+
+.baby {
+  border: 1px solid red;
+}
+
+.button {
+  background: #51aded 35px 23px no-repeat;
+  border-radius: 8px;
+  box-shadow: 0 4px #2d9fee;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font: 16px;
+  margin: 5px 5px ;
+  padding: 5px;
+  text-decoration: none;
+  transition: all 100ms linear;
+  width: auto;
+}
+
+.favor {
+  background: #2ecc71;
+  display: block;
+  padding-left: 5px;
+  width: 90px;
+}
+/*****Классы:hover*****/
+.add:hover {
+ transform: scale(1.2);
+}
+
+.btn-append:hover {
+  background: red;
+  box-shadow: inset 0px 0px 14px 0px rgba(0,0,0,0.75);
+  font-size: 11px;
+}
+
+.btn-prepend:hover {
+  background: red;
+  box-shadow: inset 0px 0px 14px 0px rgba(0,0,0,0.75);
+  font-size: 11px;
+}
+
+
+.button:hover {
+	opacity: 0.9;
+}
+
+/*****Анимации*****/
+@keyframes anim {
+  0% {
+    margin: -41px;
+  }
+  70% {
+    margin: 53px;
+  }
+  85%{
+    margin: 47px;
+  }
+  100% {
+    margin: 50px;
+  }
+}
+
+@keyframes new {
+  0% {
+    margin: 10px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin: 10px;
+  }
+}
